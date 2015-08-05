@@ -1,0 +1,448 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/* General */
+
+html {
+	background-color: #68B678;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+video#background-video {
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+}
+
+ul li a {
+	cursor: default;
+}
+
+/* Fonts */
+
+.font-size-40 {
+	font-size: 40px !important;
+}
+
+/* Flow */
+
+.display-flex {
+	display: flex;
+}
+
+/* Positioning */
+
+.left-20-vw {
+	left: 20vw;
+}
+
+.left-33-vw {
+	left: 33vw;
+}
+
+.left-40-vw {
+	left: 40vw;
+}
+
+.left--30-vw {
+	left: -30vw;
+}
+
+.top-25-vh {
+	top: 25vh;
+}
+
+.top-45-vh {
+	top: 45vh;
+}
+
+.top-55-vh {
+	top: 55vh;
+}
+
+.top-70-vh {
+	top: 70vh;
+}
+
+/* Size */
+
+.no-padding {
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+/* Button Navigation */
+
+.button-nav {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	left: 40px;
+	top: calc(50% - 52px);
+	z-index: 1;
+}
+
+.button-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.button-nav li {
+	margin-top: 10px;
+	text-align: center;
+	height: 16px;
+	width: 16px;
+}
+
+.button-nav li a {
+	display: inline-flex;
+}
+
+.button-nav li a div {
+	-webkit-transition: all .1s;
+	-moz-transition: all .1s;
+	-ms-transition: all .1s;
+	-o-transition: all .1s;
+	transition: all .1s;
+}
+
+.circle {
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+}
+
+.circle:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.circle-expanded {
+	width: 12px;
+	height: 12px;
+	-webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    border: solid 2px white;
+    background-color: rgba(255, 255, 255, 0);
+    transform: translateY(2px);
+    cursor: default;
+}
+
+/* Main Divs */
+
+.header-2 {
+	color: black !important; top: 10vh; left: -30vw; padding: 0; margin-left: -330px; border-top-left-radius: 50%;
+}
+
+.header-3 {
+	color: black !important;
+	top: 10vh;
+	left: -30vw;
+	padding: 0;
+	margin-left: -425px;
+}
+
+.header-4 {
+	color: black !important;
+	top: 10vh;
+	left: -30vw;
+	padding: 0;
+	margin-left: -450px;
+}
+
+.header-text {
+	vertical-align: middle;
+	font-size: 60px !important;
+	margin: auto 10px;
+}
+
+.about-box-1 {
+	color: black !important;
+	top: 30vh;
+	left: 110vw;
+	padding: 0 0 0 80px !important;
+	border-radius: 100px;
+	background-color: rgba(255, 255, 255, .7);
+	margin-left: -600px;
+}
+
+.about-box-2 {
+	color: black !important;
+	top: 50vh;
+	left: -30vw;
+	padding: 0 80px 0 0 !important;
+	border-radius: 100px;
+	background-color: rgba(255, 255, 255, .7);
+	margin-left: -150px;
+}
+
+.about-box-3 {
+	color: black !important;
+	top: 70vh;
+	left: 110vw;
+	padding: 0 0 0 80px !important;
+	border-radius: 100px;
+	background-color: rgba(255, 255, 255, .7);
+	margin-left: -450px;
+}
+
+.about-text {
+	vertical-align: middle;
+	font-size: 25px !important;
+	margin: auto 10px;
+	white-space: normal !important;
+	max-width: 600px;
+	min-width: 600px;
+	text-align: justify;
+}
+
+.container-div {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.skrollr-content {
+	z-index: 3;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: white;
+	font-size: 40px;
+	position: absolute;
+	padding: 10px;
+	white-space: nowrap;
+}
+
+.skrollr-name {
+	z-index: 3;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: white;
+	font-size: 60px;
+	position: absolute;
+	padding: 10px;
+	white-space: nowrap;
+}
+
+.background-image {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.skrollr {
+	background-color: #68B678;
+}
+
+/* Div 4 */
+
+.info-text {
+	color: black !important; 
+	top: 30vh; 
+	left: 110vw; 
+	padding: 0; 
+	font-size: 100px !important;
+	line-height: 31px;
+}
+
+/* Images and Backgrounds */
+
+.div-background-img {
+	background-size: 100%;
+	min-width: 200px;
+	height: 200px;
+	padding: 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.portrait-background-img {
+	background-size: 100%;
+	min-width: 300px;
+	height: 300px;
+	padding: 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.icon-background-img {
+	background-size: 100%;
+	width: 100px;
+	height: 100px;
+	margin-left: 20px;
+	margin-top: 100px;
+	position: relative;
+	padding: 0;
+	border-radius: 50%;
+	overflow: hidden;
+	-webkit-transition: all ease-in-out .2s;
+	-moz-transition: all ease-in-out .2s;
+	-ms-transition: all ease-in-out .2s;
+	-o-transition: all ease-in-out .2s;
+	transition: all ease-in-out .2s;
+}
+
+.icon-background-img:hover {
+	box-shadow: 
+		inset 0 0 0 8px rgba(255,255,255,0.8);
+}
+
+.icon-link {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 100px;
+	overflow: hidden;
+}
+
+.gear-background {
+	background-image: url("..\\images\\Gear.png");
+}
+
+.code-background {
+	background-image: url("..\\images\\Code.png");
+}
+
+.chat-background {
+	background-image: url("..\\images\\Chat.png");
+}
+
+.tags-background {
+	background-image: url("..\\images\\Tags.png");
+}
+
+.check-background {
+	background-image: url("..\\images\\Check2.png");
+}
+
+.questionmark-background {
+	background-image: url("..\\images\\Questionmark2.png");
+}
+
+.portrait-background {
+	background-image: url("..\\images\\Matthan.png");
+}
+
+.mail-background {
+	background-image: url("..\\images\\Mail.png");
+}
+
+.linkedin-background {
+	background-image: url("..\\images\\LinkedInCircle.png");
+}
+
+.facebook-background {
+	background-image: url("..\\images\\FacebookCircle.png");
+}
+
+.twitter-background {
+	background-image: url("..\\images\\TwitterCircle.png");
+}
+
+.grayscale {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.grayscale:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+/* Animations */
+
+.blink {
+	-webkit-animation: 1s blink ease infinite;
+  	-moz-animation: 1s blink ease infinite;
+  	-ms-animation: 1s blink ease infinite;
+  	-o-animation: 1s blink ease infinite;
+  	animation: 1s blink ease infinite;
+}
+
+.spin {
+	-webkit-animation: 7.5s spin linear infinite;
+  	-moz-animation: 7.5s spin linear infinite;
+  	-ms-animation: 7.5s spin linear infinite;
+  	-o-animation: 7.5s spin linear infinite;
+  	animation: 7.5s spin linear infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes spin {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
