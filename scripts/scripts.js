@@ -5,22 +5,22 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 		if($(".circle-expanded").parent().parent().is("#1")) {
-			$("body").animate({ scrollTop: $("#container-1").offset().top }, 0);
+			$("html, body").animate({ scrollTop: $("#container-1").offset().top }, 0);
 		}
 		if($(".circle-expanded").parent().parent().is("#2")) {
-			$("body").animate({ scrollTop: $("#container-2").offset().top }, 0);
+			$("html, body").animate({ scrollTop: $("#container-2").offset().top }, 0);
 		}
 		else if($(".circle-expanded").parent().parent().is("#3")) {
-			$("body").animate({ scrollTop: $("#container-3").offset().top }, 0);
+			$("html, body").animate({ scrollTop: $("#container-3").offset().top }, 0);
 		}
 		else if($(".circle-expanded").parent().parent().is("#4")) {
-			$("body").animate({ scrollTop: $("#container-4").offset().top }, 0);
+			$("html, body").animate({ scrollTop: $("#container-4").offset().top }, 0);
 		}
 	})
 
 	  $("#1").click(function () {
-	  	$("body").stop();
-	  	$("body").animate({
+	  	$("html, body").stop();
+	  	$("html, body").animate({
 	  		scrollTop: $("#container-1").offset().top
 	  	}, 1000);
 	  	$("#1 a div").addClass("circle-expanded");
@@ -34,8 +34,8 @@ $(document).ready(function() {
 	  });
 
 	  $("#2").click(function () {
-	  	$("body").stop();
-	  	$("body").animate({
+	  	$("html, body").stop();
+	  	$("html, body").animate({
 	  		scrollTop: $("#container-2").offset().top
 	  	}, 1000);
 	  	$("#2 a div").addClass("circle-expanded");
@@ -49,8 +49,8 @@ $(document).ready(function() {
 	  });
 
 	  $("#3").click(function () {
-	  	$("body").stop();
-	  	$("body").animate({
+	  	$("html, body").stop();
+	  	$("html, body").animate({
 	  		scrollTop: $("#container-3").offset().top
 	  	}, 1000);
 	  	$("#3 a div").addClass("circle-expanded");
@@ -64,8 +64,8 @@ $(document).ready(function() {
 	  });
 
 	  $("#4").click(function () {
-	  	$("body").stop();
-	  	$("body").animate({
+	  	$("html, body").stop();
+	  	$("html, body").animate({
 	  		scrollTop: $("#container-4").offset().top
 	  	}, 1000);
 	  	$("#4 a div").addClass("circle-expanded");
@@ -86,7 +86,7 @@ $(document).ready(function() {
 	        	$("#1").find("div").removeClass("circle");
 	        	$("#2").find("div").addClass("circle");
 	        	$("#2").find("div").removeClass("circle-expanded");
-	        	$("body").animate({ scrollTop: $("#container-1").offset().top }, 1000);
+	        	$("html, body").animate({ scrollTop: $("#container-1").offset().top }, 1000);
 
 	        }
 	        else if($(".circle-expanded").parent().parent().is("#3") && $("body").is(":animated") == false)
@@ -95,7 +95,7 @@ $(document).ready(function() {
 	        	$("#2").find("div").removeClass("circle");
 	        	$("#3").find("div").addClass("circle");
 	        	$("#3").find("div").removeClass("circle-expanded");
-	        	$("body").animate({ scrollTop: $("#container-2").offset().top }, 1000);
+	        	$("html, body").animate({ scrollTop: $("#container-2").offset().top }, 1000);
 	        }
 	        else if($(".circle-expanded").parent().parent().is("#4") && $("body").is(":animated") == false)
 	        {
@@ -103,7 +103,7 @@ $(document).ready(function() {
 	        	$("#3").find("div").removeClass("circle");
 	        	$("#4").find("div").addClass("circle");
 	        	$("#4").find("div").removeClass("circle-expanded");
-	        	$("body").animate({ scrollTop: $("#container-3").offset().top }, 1000);
+	        	$("html, body").animate({ scrollTop: $("#container-3").offset().top }, 1000);
 	        }
 	    }
 	    else {
@@ -113,7 +113,7 @@ $(document).ready(function() {
 	        	$("#2").find("div").removeClass("circle");
 	        	$("#1").find("div").addClass("circle");
 	        	$("#1").find("div").removeClass("circle-expanded");
-	        	$("body").animate({ scrollTop: $("#container-2").offset().top }, 1000);
+	        	$("html, body").animate({ scrollTop: $("#container-2").offset().top }, 1000);
 
 	        }
 	        else if($(".circle-expanded").parent().parent().is("#2") && $("body").is(":animated") == false)
@@ -122,7 +122,7 @@ $(document).ready(function() {
 	        	$("#3").find("div").removeClass("circle");
 	        	$("#2").find("div").addClass("circle");
 	        	$("#2").find("div").removeClass("circle-expanded");
-	        	$("body").animate({ scrollTop: $("#container-3").offset().top }, 1000);
+	        	$("html, body").animate({ scrollTop: $("#container-3").offset().top }, 1000);
 	        }
 	        else if($(".circle-expanded").parent().parent().is("#3") && $("body").is(":animated") == false)
 	        {
@@ -130,7 +130,7 @@ $(document).ready(function() {
 	        	$("#4").find("div").removeClass("circle");
 	        	$("#3").find("div").addClass("circle");
 	        	$("#3").find("div").removeClass("circle-expanded");
-	        	$("body").animate({ scrollTop: $("#container-4").offset().top }, 1000);
+	        	$("html, body").animate({ scrollTop: $("#container-4").offset().top }, 1000);
 	        }
 	    }
 	});
