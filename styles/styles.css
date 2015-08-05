@@ -147,12 +147,16 @@ ul li a {
 /* Main Divs */
 
 .header-2 {
-	color: black !important; top: 10vh; left: -30vw; padding: 0; margin-left: -330px; border-top-left-radius: 50%;
+	color: black !important;
+	top: 8vh;
+	left: -30vw;
+	padding: 0;
+	margin-left: -330px;
 }
 
 .header-3 {
 	color: black !important;
-	top: 10vh;
+	top: 8vh;
 	left: -30vw;
 	padding: 0;
 	margin-left: -425px;
@@ -160,7 +164,7 @@ ul li a {
 
 .header-4 {
 	color: black !important;
-	top: 10vh;
+	top: 8vh;
 	left: -30vw;
 	padding: 0;
 	margin-left: -450px;
@@ -210,6 +214,41 @@ ul li a {
 	max-width: 600px;
 	min-width: 600px;
 	text-align: justify;
+	float: left;
+}
+
+.works-box-1 {
+	top: 30vh;
+	left: 110vw;
+	padding: 0 !important;
+	background-color: rgba(255, 255, 255, 1);
+	margin-left: -300px;
+}
+
+.works-box-2 {
+	top: 50vh;
+	left: -30vw;
+	padding: 0 !important;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.works-box-3 {
+	top: 70vh;
+	left: 110vw;
+	padding: 0 !important;
+	background-color: rgba(255, 255, 255, 1);
+	margin-left: -250px;
+}
+
+.works-text {
+	vertical-align: middle;
+	font-size: 25px !important;
+	margin: auto 10px;
+	white-space: normal !important;
+	width: 600px;
+	height: 200px;
+	text-align: justify;
+	float: left;
 }
 
 .container-div {
@@ -264,11 +303,12 @@ ul li a {
 
 .div-background-img {
 	background-size: 100%;
-	min-width: 200px;
+	width: 200px;
 	height: 200px;
 	padding: 0;
 	border-radius: 50%;
 	overflow: hidden;
+	float: left;
 }
 
 .portrait-background-img {
