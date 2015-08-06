@@ -250,7 +250,7 @@ ul li a {
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
-	background-size: 100% 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -281,15 +281,15 @@ ul li a {
 }
 
 #container-2 {
-	background-image: url("..\\images\\coast.jpg");
+	background-image: url("../images/coast.jpg");
 }
 
 #container-3 {
-	background-image: url("..\\images\\tide.jpg");
+	background-image: url("../images/tide.jpg");
 }
 
 #container-4 {
-	background-image: url("..\\images\\grass.jpg");
+	background-image: url("../images/grass.jpg");
 }
 
 .skrollr {
@@ -330,11 +330,11 @@ ul li a {
 	border-radius: 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	-webkit-transition: box-shadow .2s;
-	-moz-transition: box-shadow .2s;
-	-ms-transition: box-shadow .2s;
-	-o-transition: box-shadow .2s;
-	transition: box-shadow .2s;
+	-webkit-transition: box-shadow ease-in-out .2s;
+	-moz-transition: box-shadow ease-in-out .2s;
+	-ms-transition: box-shadow ease-in-out .2s;
+	-o-transition: box-shadow ease-in-out .2s;
+	transition: box-shadow ease-in-out .2s;
 }
 
 .icon-wrapper {
@@ -351,15 +351,15 @@ ul li a {
 }
 
 .linkedin {
-	background-image: url("..\\images\\LinkedInCircle.png");
+	background-image: url("../images/LinkedInCircle.png");
 }
 
 .facebook {
-	background-image: url("..\\images\\FacebookCircle.png");
+	background-image: url("../images/FacebookCircle.png");
 }
 
 .twitter {
-	background-image: url("..\\images\\TwitterCircle.png");
+	background-image: url("../images/TwitterCircle.png");
 }
 
 .grayscale {
