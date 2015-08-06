@@ -32,6 +32,10 @@ ul li a {
 	font-size: 40px !important;
 }
 
+.font-size-5vh {
+	font-size: 5vh !important;
+}
+
 /* Flow */
 
 .display-flex {
@@ -66,6 +70,10 @@ ul li a {
 
 .top-55-vh {
 	top: 55vh;
+}
+
+.top-60-vh {
+	top: 60vh;
 }
 
 .top-70-vh {
@@ -146,33 +154,16 @@ ul li a {
 
 /* Main Divs */
 
-.header-2 {
+.header {
 	color: black !important;
 	top: 8vh;
 	left: -30vw;
 	padding: 0;
-	margin-left: -330px;
-}
-
-.header-3 {
-	color: black !important;
-	top: 8vh;
-	left: -30vw;
-	padding: 0;
-	margin-left: -425px;
-}
-
-.header-4 {
-	color: black !important;
-	top: 8vh;
-	left: -30vw;
-	padding: 0;
-	margin-left: -450px;
 }
 
 .header-text {
 	vertical-align: middle;
-	font-size: 60px !important;
+	font-size: 5vh !important;
 	margin: auto 10px;
 }
 
@@ -180,39 +171,41 @@ ul li a {
 	color: black !important;
 	top: 30vh;
 	left: 110vw;
-	padding: 0 0 0 80px !important;
-	border-radius: 100px;
+	padding: 1vh !important;
+	padding-left: 3vw !important;
+	border-radius: 9.5vh;
 	background-color: rgba(255, 255, 255, .7);
-	margin-left: -600px;
+	margin-left: -100px;
 }
 
 .about-box-2 {
 	color: black !important;
 	top: 50vh;
 	left: -30vw;
-	padding: 0 80px 0 0 !important;
-	border-radius: 100px;
+	padding: 1vh !important;
+	padding-right: 3vw !important;
+	border-radius: 9.5vh;
 	background-color: rgba(255, 255, 255, .7);
-	margin-left: -150px;
 }
 
 .about-box-3 {
 	color: black !important;
 	top: 70vh;
 	left: 110vw;
-	padding: 0 0 0 80px !important;
-	border-radius: 100px;
+	padding: 1vh !important;
+	padding-left: 3vw !important;
+	border-radius: 9.5vh;
 	background-color: rgba(255, 255, 255, .7);
-	margin-left: -450px;
+	margin-left: -150px;
 }
 
 .about-text {
 	vertical-align: middle;
-	font-size: 25px !important;
+	font-size: 2vh !important;
 	margin: auto 10px;
 	white-space: normal !important;
-	max-width: 600px;
-	min-width: 600px;
+	width: 25vw;
+	min-width: 400px;
 	text-align: justify;
 	float: left;
 }
@@ -222,7 +215,7 @@ ul li a {
 	left: 110vw;
 	padding: 0 !important;
 	background-color: rgba(255, 255, 255, 1);
-	margin-left: -300px;
+	margin-left: -100px;
 }
 
 .works-box-2 {
@@ -237,7 +230,7 @@ ul li a {
 	left: 110vw;
 	padding: 0 !important;
 	background-color: rgba(255, 255, 255, 1);
-	margin-left: -250px;
+	margin-left: -150px;
 }
 
 .works-text {
@@ -245,8 +238,9 @@ ul li a {
 	font-size: 25px !important;
 	margin: auto 10px;
 	white-space: normal !important;
-	width: 600px;
-	height: 200px;
+	width: 25vh;
+	min-width: 400px;
+	height: 17vh;
 	text-align: justify;
 	float: left;
 }
@@ -262,7 +256,7 @@ ul li a {
 	z-index: 3;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	color: white;
-	font-size: 40px;
+	font-size: 5vh;
 	position: absolute;
 	padding: 10px;
 	white-space: nowrap;
@@ -272,7 +266,7 @@ ul li a {
 	z-index: 3;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	color: white;
-	font-size: 60px;
+	font-size: 8vh;
 	position: absolute;
 	padding: 10px;
 	white-space: nowrap;
@@ -295,102 +289,57 @@ ul li a {
 	top: 30vh; 
 	left: 110vw; 
 	padding: 0; 
-	font-size: 100px !important;
-	line-height: 31px;
+	font-size: 10vh !important;
+	width: 40vw;
+	line-height: 5vh;
+	margin-left: -150px;
 }
 
 /* Images and Backgrounds */
 
-.div-background-img {
-	background-size: 100%;
-	width: 200px;
-	height: 200px;
-	padding: 0;
-	border-radius: 50%;
-	overflow: hidden;
+.header-img {
+	height: 15vh;
 	float: left;
+	border-radius: 50%;
 }
 
-.portrait-background-img {
-	background-size: 100%;
-	min-width: 300px;
-	height: 300px;
-	padding: 0;
+.portrait-img {
+	height: 20vh;
+	float: left;
+	border-radius: 50%;
+}
+
+.icon-img {
+	height: 10vh;
+	width: 10vh;
+	float: left;
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.icon-wrapper {
+	height: 50%;
 	border-radius: 50%;
 	overflow: hidden;
+	margin-top: 5vh;
+	margin-left: 1vw;
 }
 
-.icon-background-img {
-	background-size: 100%;
-	width: 100px;
-	height: 100px;
-	margin-left: 20px;
-	margin-top: 100px;
-	position: relative;
-	padding: 0;
-	border-radius: 50%;
-	overflow: hidden;
-	-webkit-transition: all ease-in-out .2s;
-	-moz-transition: all ease-in-out .2s;
-	-ms-transition: all ease-in-out .2s;
-	-o-transition: all ease-in-out .2s;
-	transition: all ease-in-out .2s;
-}
-
-.icon-background-img:hover {
+.icon-img:hover {
 	box-shadow: 
-		inset 0 0 0 8px rgba(255,255,255,0.8);
+		inset 0 0 0 .75vh rgba(255,255,255,0.8);
 }
 
-.icon-link {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	border-radius: 100px;
-	overflow: hidden;
-}
-
-.gear-background {
-	background-image: url("..\\images\\Gear.png");
-}
-
-.code-background {
-	background-image: url("..\\images\\Code.png");
-}
-
-.chat-background {
-	background-image: url("..\\images\\Chat.png");
-}
-
-.tags-background {
-	background-image: url("..\\images\\tags.png");
-}
-
-.check-background {
-	background-image: url("..\\images\\Check2.png");
-}
-
-.questionmark-background {
-	background-image: url("..\\images\\Questionmark2.png");
-}
-
-.portrait-background {
-	background-image: url("..\\images\\Matthan.png");
-}
-
-.mail-background {
-	background-image: url("..\\images\\Mail.png");
-}
-
-.linkedin-background {
+.linkedin {
 	background-image: url("..\\images\\LinkedInCircle.png");
 }
 
-.facebook-background {
+.facebook {
 	background-image: url("..\\images\\FacebookCircle.png");
 }
 
-.twitter-background {
+.twitter {
 	background-image: url("..\\images\\TwitterCircle.png");
 }
 
