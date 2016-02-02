@@ -480,6 +480,10 @@ ul li a {
 	background-image: url("../images/Navbutton.png");
 }
 
+.mobile-nav-top {
+	background-image: url("../images/tags.png");
+}
+
 .mobile-nav-gear {
 	background-image: url("../images/Gear.png");
 }
@@ -538,13 +542,13 @@ ul li a {
 		display: inline-block !important;
 	}
 
-	.skrollr-content {
+	/*.skrollr-content {
 		display: none !important;
 	}
 
 	.skrollr-name {
 		display: none !important;
-	}
+	}*/
 
 	.button-nav {
 		display: none !important;

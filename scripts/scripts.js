@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	 var s = skrollr.init();
+	if($(window).width() > 480) {
+		var s = skrollr.init();
+	}
 
 	$(this).scrollTop(0);
 
@@ -78,7 +80,7 @@ $(document).ready(function() {
 	  	$(".3 a div").removeClass("circle-expanded");
 	  });
 
-	  $(window).on('mousewheel DOMMouseScroll touchmove', function(event) {
+	  $(window).on('mousewheel DOMMouseScroll', function(event) {
 	    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
 	        if($(".circle-expanded").parent().parent().is(".2") && $("body").is(":animated") == false)
 	        {
