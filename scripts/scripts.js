@@ -4,132 +4,132 @@ $(document).ready(function() {
 	$(this).scrollTop(0);
 
 	$(window).resize(function() {
-		if($(".circle-expanded").parent().parent().is("#1")) {
+		if($(".circle-expanded").parent().parent().is(".1")) {
 			$("html, body").animate({ scrollTop: $("#container-1").offset().top }, 0);
 		}
-		if($(".circle-expanded").parent().parent().is("#2")) {
+		if($(".circle-expanded").parent().parent().is(".2")) {
 			$("html, body").animate({ scrollTop: $("#container-2").offset().top }, 0);
 		}
-		else if($(".circle-expanded").parent().parent().is("#3")) {
+		else if($(".circle-expanded").parent().parent().is(".3")) {
 			$("html, body").animate({ scrollTop: $("#container-3").offset().top }, 0);
 		}
-		else if($(".circle-expanded").parent().parent().is("#4")) {
+		else if($(".circle-expanded").parent().parent().is(".4")) {
 			$("html, body").animate({ scrollTop: $("#container-4").offset().top }, 0);
 		}
 	})
 
-	  $("#1").click(function () {
+	  $(".1").click(function () {
 	  	$("html, body").stop();
 	  	$("html, body").animate({
 	  		scrollTop: $("#container-1").offset().top
 	  	}, 1000);
-	  	$("#1 a div").addClass("circle-expanded");
-	  	$("#1 a div").removeClass("circle");
-	  	$("#2 a div").addClass("circle");
-	  	$("#2 a div").removeClass("circle-expanded");
-	  	$("#3 a div").addClass("circle");
-	  	$("#3 a div").removeClass("circle-expanded");
-	  	$("#4 a div").addClass("circle");
-	  	$("#4 a div").removeClass("circle-expanded");
+	  	$(".1 a div").addClass("circle-expanded");
+	  	$(".1 a div").removeClass("circle");
+	  	$(".2 a div").addClass("circle");
+	  	$(".2 a div").removeClass("circle-expanded");
+	  	$(".3 a div").addClass("circle");
+	  	$(".3 a div").removeClass("circle-expanded");
+	  	$(".4 a div").addClass("circle");
+	  	$(".4 a div").removeClass("circle-expanded");
 	  });
 
-	  $("#2").click(function () {
+	  $(".2").click(function () {
 	  	$("html, body").stop();
 	  	$("html, body").animate({
 	  		scrollTop: $("#container-2").offset().top
 	  	}, 1000);
-	  	$("#2 a div").addClass("circle-expanded");
-	  	$("#2 a div").removeClass("circle");
-	  	$("#1 a div").addClass("circle");
-	  	$("#1 a div").removeClass("circle-expanded");
-	  	$("#3 a div").addClass("circle");
-	  	$("#3 a div").removeClass("circle-expanded");
-	  	$("#4 a div").addClass("circle");
-	  	$("#4 a div").removeClass("circle-expanded");
+	  	$(".2 a div").addClass("circle-expanded");
+	  	$(".2 a div").removeClass("circle");
+	  	$(".1 a div").addClass("circle");
+	  	$(".1 a div").removeClass("circle-expanded");
+	  	$(".3 a div").addClass("circle");
+	  	$(".3 a div").removeClass("circle-expanded");
+	  	$(".4 a div").addClass("circle");
+	  	$(".4 a div").removeClass("circle-expanded");
 	  });
 
-	  $("#3").click(function () {
+	  $(".3").click(function () {
 	  	$("html, body").stop();
 	  	$("html, body").animate({
 	  		scrollTop: $("#container-3").offset().top
 	  	}, 1000);
-	  	$("#3 a div").addClass("circle-expanded");
-	  	$("#3 a div").removeClass("circle");
-	  	$("#1 a div").addClass("circle");
-	  	$("#1 a div").removeClass("circle-expanded");
-	  	$("#2 a div").addClass("circle");
-	  	$("#2 a div").removeClass("circle-expanded");
-	  	$("#4 a div").addClass("circle");
-	  	$("#4 a div").removeClass("circle-expanded");
+	  	$(".3 a div").addClass("circle-expanded");
+	  	$(".3 a div").removeClass("circle");
+	  	$(".1 a div").addClass("circle");
+	  	$(".1 a div").removeClass("circle-expanded");
+	  	$(".2 a div").addClass("circle");
+	  	$(".2 a div").removeClass("circle-expanded");
+	  	$(".4 a div").addClass("circle");
+	  	$(".4 a div").removeClass("circle-expanded");
 	  });
 
-	  $("#4").click(function () {
+	  $(".4").click(function () {
 	  	$("html, body").stop();
 	  	$("html, body").animate({
 	  		scrollTop: $("#container-4").offset().top
 	  	}, 1000);
-	  	$("#4 a div").addClass("circle-expanded");
-	  	$("#4 a div").removeClass("circle");
-	  	$("#1 a div").addClass("circle");
-	  	$("#1 a div").removeClass("circle-expanded");
-	  	$("#2 a div").addClass("circle");
-	  	$("#2 a div").removeClass("circle-expanded");
-	  	$("#3 a div").addClass("circle");
-	  	$("#3 a div").removeClass("circle-expanded");
+	  	$(".4 a div").addClass("circle-expanded");
+	  	$(".4 a div").removeClass("circle");
+	  	$(".1 a div").addClass("circle");
+	  	$(".1 a div").removeClass("circle-expanded");
+	  	$(".2 a div").addClass("circle");
+	  	$(".2 a div").removeClass("circle-expanded");
+	  	$(".3 a div").addClass("circle");
+	  	$(".3 a div").removeClass("circle-expanded");
 	  });
 
-	  $(window).bind('mousewheel DOMMouseScroll', function(event){
+	  $(window).bind('mousewheel DOMMouseScroll', function(event) {
 	    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-	        if($(".circle-expanded").parent().parent().is("#2") && $("body").is(":animated") == false)
+	        if($(".circle-expanded").parent().parent().is(".2") && $("body").is(":animated") == false)
 	        {
-	        	$("#1").find("div").addClass("circle-expanded");
-	        	$("#1").find("div").removeClass("circle");
-	        	$("#2").find("div").addClass("circle");
-	        	$("#2").find("div").removeClass("circle-expanded");
+	        	$(".1").find("div").addClass("circle-expanded");
+	        	$(".1").find("div").removeClass("circle");
+	        	$(".2").find("div").addClass("circle");
+	        	$(".2").find("div").removeClass("circle-expanded");
 	        	$("html, body").animate({ scrollTop: $("#container-1").offset().top }, 1000);
 
 	        }
-	        else if($(".circle-expanded").parent().parent().is("#3") && $("body").is(":animated") == false)
+	        else if($(".circle-expanded").parent().parent().is(".3") && $("body").is(":animated") == false)
 	        {
-	        	$("#2").find("div").addClass("circle-expanded");
-	        	$("#2").find("div").removeClass("circle");
-	        	$("#3").find("div").addClass("circle");
-	        	$("#3").find("div").removeClass("circle-expanded");
+	        	$(".2").find("div").addClass("circle-expanded");
+	        	$(".2").find("div").removeClass("circle");
+	        	$(".3").find("div").addClass("circle");
+	        	$(".3").find("div").removeClass("circle-expanded");
 	        	$("html, body").animate({ scrollTop: $("#container-2").offset().top }, 1000);
 	        }
-	        else if($(".circle-expanded").parent().parent().is("#4") && $("body").is(":animated") == false)
+	        else if($(".circle-expanded").parent().parent().is(".4") && $("body").is(":animated") == false)
 	        {
-	        	$("#3").find("div").addClass("circle-expanded");
-	        	$("#3").find("div").removeClass("circle");
-	        	$("#4").find("div").addClass("circle");
-	        	$("#4").find("div").removeClass("circle-expanded");
+	        	$(".3").find("div").addClass("circle-expanded");
+	        	$(".3").find("div").removeClass("circle");
+	        	$(".4").find("div").addClass("circle");
+	        	$(".4").find("div").removeClass("circle-expanded");
 	        	$("html, body").animate({ scrollTop: $("#container-3").offset().top }, 1000);
 	        }
 	    }
 	    else {
-	        if($(".circle-expanded").parent().parent().is("#1") && $("body").is(":animated") == false)
+	        if($(".circle-expanded").parent().parent().is(".1") && $("body").is(":animated") == false)
 	        {
-	        	$("#2").find("div").addClass("circle-expanded");
-	        	$("#2").find("div").removeClass("circle");
-	        	$("#1").find("div").addClass("circle");
-	        	$("#1").find("div").removeClass("circle-expanded");
+	        	$(".2").find("div").addClass("circle-expanded");
+	        	$(".2").find("div").removeClass("circle");
+	        	$(".1").find("div").addClass("circle");
+	        	$(".1").find("div").removeClass("circle-expanded");
 	        	$("html, body").animate({ scrollTop: $("#container-2").offset().top }, 1000);
 
 	        }
-	        else if($(".circle-expanded").parent().parent().is("#2") && $("body").is(":animated") == false)
+	        else if($(".circle-expanded").parent().parent().is(".2") && $("body").is(":animated") == false)
 	        {
-	        	$("#3").find("div").addClass("circle-expanded");
-	        	$("#3").find("div").removeClass("circle");
-	        	$("#2").find("div").addClass("circle");
-	        	$("#2").find("div").removeClass("circle-expanded");
+	        	$(".3").find("div").addClass("circle-expanded");
+	        	$(".3").find("div").removeClass("circle");
+	        	$(".2").find("div").addClass("circle");
+	        	$(".2").find("div").removeClass("circle-expanded");
 	        	$("html, body").animate({ scrollTop: $("#container-3").offset().top }, 1000);
 	        }
-	        else if($(".circle-expanded").parent().parent().is("#3") && $("body").is(":animated") == false)
+	        else if($(".circle-expanded").parent().parent().is(".3") && $("body").is(":animated") == false)
 	        {
-	        	$("#4").find("div").addClass("circle-expanded");
-	        	$("#4").find("div").removeClass("circle");
-	        	$("#3").find("div").addClass("circle");
-	        	$("#3").find("div").removeClass("circle-expanded");
+	        	$(".4").find("div").addClass("circle-expanded");
+	        	$(".4").find("div").removeClass("circle");
+	        	$(".3").find("div").addClass("circle");
+	        	$(".3").find("div").removeClass("circle-expanded");
 	        	$("html, body").animate({ scrollTop: $("#container-4").offset().top }, 1000);
 	        }
 	    }
