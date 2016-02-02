@@ -472,9 +472,9 @@ ul li a {
 
 /* Mobile Optimization */
 
-/*.mobile-content {
+.mobile-content {
 	display: none;
-}*/
+}
 
 .mobile-content-settings {
 	z-index: 3;
@@ -555,14 +555,6 @@ ul li a {
 	height: 100%;
 	display: inline-flex;
 	cursor: pointer;
-}
-
-.skrollr-content {
-		display: none !important;
-}
-
-.skrollr-name {
-	display: none !important;
 }
 
 .about-box-1-mobile {
