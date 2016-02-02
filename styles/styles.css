@@ -497,6 +497,16 @@ ul li a {
 	white-space: nowrap;
 }
 
+.about-text-mobile {
+	vertical-align: middle;
+	font-size: 2vh !important;
+	margin: auto 10px;
+	white-space: normal !important;
+	width: 25vw;
+	min-width: 400px;
+	float: left;
+}
+
 .mobile-nav-main {
 	background-image: url("../images/Navbutton.png");
 }
