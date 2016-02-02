@@ -471,12 +471,13 @@ ul li a {
 }
 
 /* Mobile Optimization */
-.mobile-content {
+
+/*.mobile-content {
 	display: none;
-}
+}*/
 
 .mobile-nav-main {
-	background-image: url("../images/Navbutton-final.png");
+	background-image: url("../images/Navbutton.png");
 }
 
 .mobile-nav-gear {
@@ -493,7 +494,12 @@ ul li a {
 
 .mobile-nav-follower {
 	margin-top: 20px !important;
-	display: none;
+	transform: translateX(200px);
+	-webkit-transition: transform .5s;
+	-moz-transition: transform  .5s;
+	-ms-transition: transform  .5s;
+	-o-transition: transform  .5s;
+	transition: transform  .5s;
 }
 
 .mobile-nav-button {

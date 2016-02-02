@@ -178,12 +178,15 @@ $(document).ready(function() {
 
 	loopMain();
  
+ 	var moveMobileNav = true
 	$(".mobile-nav-main").click(function() {
-		if($(".mobile-nav-follower").css("display") == "none") {
-			$(".mobile-nav-follower").css("display", "block")
+		if(moveMobileNav) {
+			$(".mobile-nav-follower").css("transform", "translateX(0px)")
+			moveMobileNav = false
 		}
 		else {
-			$(".mobile-nav-follower").css("display", "none")
+			$(".mobile-nav-follower").css("transform", "translateX(200px)")
+			moveMobileNav = true
 		}
 	});
 
