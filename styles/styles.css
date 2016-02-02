@@ -514,12 +514,6 @@ ul li a {
 	padding: 0;
 }
 
-.header-text-mobile {
-	vertical-align: middle;
-	font-size: 5vh !important;
-	margin: auto 10px;
-}
-
 .mobile-nav-main {
 	background-image: url("../images/Navbutton.png");
 }
