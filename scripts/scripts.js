@@ -5,6 +5,8 @@ $(document).ready(function() {
 		s.destroy();
 	}
 
+	document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
+
 	$(this).scrollTop(0);
 
 	$(window).resize(function() {
