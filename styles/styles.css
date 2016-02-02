@@ -472,8 +472,28 @@ ul li a {
 
 /* Mobile Optimization */
 
-.mobile-content {
+/*.mobile-content {
 	display: none;
+}*/
+
+.mobile-content-settings {
+	z-index: 3;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: white;
+	font-size: 4vh;
+	position: absolute;
+	padding: 10px;
+	white-space: nowrap;
+}
+
+.mobile-name-settings {
+	z-index: 3;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: white;
+	font-size: 5vh;
+	position: absolute;
+	padding: 10px;
+	white-space: nowrap;
 }
 
 .mobile-nav-main {
@@ -536,6 +556,14 @@ ul li a {
 	display: inline-flex;
 	cursor: pointer;
 }
+
+.skrollr-content {
+		display: none !important;
+	}
+
+	.skrollr-name {
+		display: none !important;
+	}
 
 @media only screen and (max-device-width: 480px) {
 	.mobile-content {
