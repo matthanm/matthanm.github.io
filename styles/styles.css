@@ -475,13 +475,40 @@ ul li a {
 	display: none;
 }
 
-#mobile-nav {
-	background-image: url("../images/Navbutton");
+.mobile-nav-button {
+	background-image: url("../images/Navbutton-final.png");
+	width: 100px;
+	height: 100px;
+}
+
+.mobile-nav {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+.mobile-nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+.mobile-nav ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.mobile-nav ul li a {
+	width: 100px;
+	height: 100px;
+	display: inline-flex;
+	cursor: pointer;
 }
 
 @media only screen and (max-device-width: 480px) {
 	.mobile-content {
-		display: block !important;
+		display: inline-block !important;
 	}
 
 	.skrollr-content {
