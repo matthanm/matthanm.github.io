@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	if($(window).width() > 480) {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		var s = skrollr.init();
 	}
 
