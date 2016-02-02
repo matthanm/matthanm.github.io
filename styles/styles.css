@@ -542,13 +542,13 @@ ul li a {
 		display: inline-block !important;
 	}
 
-	/*.skrollr-content {
+	.skrollr-content {
 		display: none !important;
 	}
 
 	.skrollr-name {
 		display: none !important;
-	}*/
+	}
 
 	.button-nav {
 		display: none !important;
