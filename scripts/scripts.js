@@ -178,6 +178,13 @@ $(document).ready(function() {
 
 	loopMain();
  
-
+	$(".mobile-nav-main").click(function() {
+		if($(".mobile-nav-follower").css("display") == "none") {
+			$(".mobile-nav-follower").css("display", "block")
+		}
+		else {
+			$(".mobile-nav-follower").css("display", "none")
+		}
+	});
 
 });	  

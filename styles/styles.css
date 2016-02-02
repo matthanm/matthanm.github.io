@@ -475,8 +475,28 @@ ul li a {
 	display: none;
 }
 
-.mobile-nav-button {
+.mobile-nav-main {
 	background-image: url("../images/Navbutton-final.png");
+}
+
+.mobile-nav-gear {
+	background-image: url("../images/Gear.png");
+}
+
+.mobile-nav-code {
+	background-image: url("../images/Check2.png");
+}
+
+.mobile-nav-me {
+	background-image: url("../images/Questionmark2.png");
+}
+
+.mobile-nav-follower {
+	margin-top: 20px !important;
+	display: none;
+}
+
+.mobile-nav-button {
 	background-size: cover;
 	width: 200px;
 	height: 200px;
