@@ -1,6 +1,8 @@
 $(document).ready(function() {
-	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-		var s = skrollr.init();
+	var s = skrollr.init();
+
+	if(s.isMobile()) {
+		s.destroy();
 	}
 
 	$(this).scrollTop(0);
