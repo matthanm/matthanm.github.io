@@ -471,13 +471,28 @@ ul li a {
 }
 
 /* Mobile Optimization */
+.mobile-content {
+	display: none;
+}
+
+#mobile-nav {
+	background-image: url("../images/Navbutton");
+}
 
 @media only screen and (max-device-width: 480px) {
+	.mobile-content {
+		display: block !important;
+	}
+
 	.skrollr-content {
-		display: none;
+		display: none !important;
+	}
+
+	.skrollr-name {
+		display: none !important;
 	}
 
 	.button-nav {
-		display: none;
+		display: none !important;
 	}
 }
