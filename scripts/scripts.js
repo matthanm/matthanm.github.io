@@ -1,12 +1,6 @@
 $(document).ready(function() {
 	var s = skrollr.init();
-
-	if(s.isMobile()) {
-		s.destroy();
-	}
-
-	document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
-
+	
 	$(this).scrollTop(0);
 
 	$(window).resize(function() {
