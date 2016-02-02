@@ -78,7 +78,7 @@ $(document).ready(function() {
 	  	$(".3 a div").removeClass("circle-expanded");
 	  });
 
-	  $(window).bind('mousewheel DOMMouseScroll', function(event) {
+	  $(window).on('mousewheel DOMMouseScroll touchmove', function(event) {
 	    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
 	        if($(".circle-expanded").parent().parent().is(".2") && $("body").is(":animated") == false)
 	        {
