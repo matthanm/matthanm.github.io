@@ -472,9 +472,9 @@ ul li a {
 
 /* Mobile Optimization */
 
-/*.mobile-content {
+.mobile-content {
 	display: none;
-}*/
+}
 
 .mobile-nav-main {
 	background-image: url("../images/Navbutton.png");
