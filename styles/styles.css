@@ -469,3 +469,15 @@ ul li a {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
+
+/* Mobile Optimization */
+
+@media only screen and (max-device-width: 480px) {
+	.skrollr-content {
+		display: none;
+	}
+
+	.button-nav {
+		display: none;
+	}
+}
